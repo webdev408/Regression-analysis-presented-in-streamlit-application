@@ -93,11 +93,11 @@ with col1:
     })
     
     fig2 = px.scatter(resid_df, x='sales_hat', y='u_hat',
-                      labels={
-                          'sales_hat': 'Fitted Values',
-                          'u_hat': 'Residuals'
-                      },
-                      title='Residuals vs Fitted Values')
+                    labels={
+                        'sales_hat': 'Fitted Values',
+                        'u_hat': 'Residuals'
+                    },
+                    title='Residuals vs Fitted Values')
     fig2.add_hline(y=0, line_dash='dash', line_color='crimson')
     st.plotly_chart(fig2, use_container_width=True)
     
